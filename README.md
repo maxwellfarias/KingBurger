@@ -19,8 +19,8 @@
 </p>
 
 <p align="row">
-<img src= "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTA0MG9od2Vtc3dvenZ0c2Y5b3dzMWhybzB3cWQ1ZWszMWxuajl4bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5v512KzJu570jIJ6Me/giphy.gif" height="400" >
-<img src= "https://media.giphy.com/media/HYOlBKJBqgAfe/giphy.gif" width="400" >
+<img src= "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTA0MG9od2Vtc3dvenZ0c2Y5b3dzMWhybzB3cWQ1ZWszMWxuajl4bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5v512KzJu570jIJ6Me/giphy.gif" height="400" > <br>
+<img src= "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXgyZmg0Ynk2bGEydmYxemNqbTYyM3pwM2EwYWMxc3ZsZnpjdHI4MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/G8jyc34Plsd61ESPcG/giphy.gif" width="400" >
 </p>
 
 ## Features
