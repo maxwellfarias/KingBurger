@@ -13,8 +13,8 @@
   <a href="https://github.com/alexanderritik/Best-README-Template">
     <img src="readmeSources/logo.png" alt="Logo" width="80" height="80">
   </a>
-  <p align="center">
-    A finalidade do aplicativo é mostrar listas de produtos em que o usuário pode fazer a recuperação de um cupom de desconto que será utilizado na hora da compra em alguma loja. A tech stack utilizada neste projeto foi UIKit por meio do uso de view code junto com Clean architecture, MVVM-C e SOLID.<br>
+  <p align="left">
+A finalidade do aplicativo é mostrar listas de produtos em que o usuário pode fazer a recuperação de um cupom de desconto que será utilizado na hora da compra em alguma loja. A tech stack utilizada neste projeto foi UIKit por meio do uso de view code junto com Clean architecture, MVVM-C e SOLID.<br>
 - Foi implementado um fluxo de cadastro, login de usuário e adicionado o controle de tokens JWT.<br>
 - Algumas das tecnologias aplicadas no projeto foram clean architecture, local Storage, API REST, Swift Package Manager(SPM), SDWebImage.O App foi feito em View Code utilizando a arquitetura MVVM-C. A ideia principal do app é mostrar uma lista de produtos em que o usuário pode pegar cupons de descontos desses itens. Foi implementada funcionalidades de cadastro de contas, login, listagem de produtos, consumo de API, gerenciamento e armazenamento de dados localmente
   </p>
