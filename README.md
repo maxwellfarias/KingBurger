@@ -19,7 +19,7 @@
 </p>
 
 <p align="row">
-<img src= "https://media.giphy.com/media/Vfgvuaa3iT5wVVDI7M/giphy.gif" width="400" >
+<img src= "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTA0MG9od2Vtc3dvenZ0c2Y5b3dzMWhybzB3cWQ1ZWszMWxuajl4bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5v512KzJu570jIJ6Me/giphy.gif" width="400" >
 <img src= "https://media.giphy.com/media/HYOlBKJBqgAfe/giphy.gif" width="400" >
 </p>
 
