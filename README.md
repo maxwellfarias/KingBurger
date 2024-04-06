@@ -4,7 +4,7 @@ Um aplicativo que mostra cupons de desconto.
 
 <p align="center">
   <a href="https://github.com/alexanderritik/Best-README-Template">
-    <img src="readmeSources/logo.png" alt="Logo" width="80" height="80">
+    <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
 </p>
 
