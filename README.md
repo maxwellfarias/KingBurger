@@ -31,7 +31,6 @@ git@github.com:maxwellfarias/KingBurger.git
 ```swift
 static let apiKey = ""
 ```
-4. Build, run, enjoy!
 
 ## Contato
 
