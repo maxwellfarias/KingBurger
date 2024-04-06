@@ -46,8 +46,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             signInCoordinator.start()
         }
         window?.makeKeyAndVisible()
-        
-        APIKeyManager.getAPIKey()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

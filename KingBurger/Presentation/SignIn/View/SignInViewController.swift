@@ -57,8 +57,8 @@ class SignInViewController: UIViewController {
         return lb
     }()
     
-    lazy var emailTf: TextField = {
-        let tf = TextField()
+    lazy var emailTf: KBTextField = {
+        let tf = KBTextField()
         tf.placeholder = "Enter your e-mail"
         tf.error = "Invalid e-mail"
         tf.returnKeyType = .next
@@ -72,8 +72,8 @@ class SignInViewController: UIViewController {
         return tf
     }()
     
-    lazy var passwordTf: TextField = {
-        let tf = TextField()
+    lazy var passwordTf: KBTextField = {
+        let tf = KBTextField()
         tf.placeholder = "Enter your password"
         tf.error = "invalid password"
         tf.returnKeyType = .done
@@ -110,8 +110,8 @@ class SignInViewController: UIViewController {
         return btn
     }()
     
-    lazy var loginBtn: LoadingButton = {
-        let btn = LoadingButton()
+    lazy var loginBtn: KBLoadingButton = {
+        let btn = KBLoadingButton()
         btn.title = "LOGIN"
         btn.backgroundColor = UIColor(named: "backgroundFeedPriceLb")
         btn.layer.cornerRadius = 10

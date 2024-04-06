@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Checkbox: UIButton {
+class KBCheckbox: UIButton {
     // Images
     let checkedImage = UIImage(systemName: "checkmark.square")!
     let uncheckedImage = UIImage(systemName: "square")!

@@ -70,8 +70,8 @@ class SignUpViewController: UIViewController {
         return img
     }()
     
-    lazy var name: TextField = {
-        let tf = TextField()
+    lazy var name: KBTextField = {
+        let tf = KBTextField()
         tf.placeholder = "Enter your name"
         tf.delegate = self
         tf.tag = 1
@@ -84,8 +84,8 @@ class SignUpViewController: UIViewController {
         return tf
     }()
     
-    lazy var email: TextField = {
-        let tf = TextField()
+    lazy var email: KBTextField = {
+        let tf = KBTextField()
         tf.placeholder = "Enter your e-mail"
         tf.delegate = self
         tf.tag = 2
@@ -99,8 +99,8 @@ class SignUpViewController: UIViewController {
         return tf
     }()
     
-    lazy var password: TextField = {
-        let tf = TextField()
+    lazy var password: KBTextField = {
+        let tf = KBTextField()
         tf.placeholder = "Enter your Password"
         tf.delegate = self
         tf.tag = 3
@@ -114,8 +114,8 @@ class SignUpViewController: UIViewController {
         return tf
     }()
     
-    lazy var document: TextField = {
-        let tf = TextField()
+    lazy var document: KBTextField = {
+        let tf = KBTextField()
         tf.delegate = self
         tf.tag = 4
         tf.error = "Invalid CPF"
@@ -130,8 +130,8 @@ class SignUpViewController: UIViewController {
         return tf
     }()
     
-    lazy var dateOfBirth: TextField = {
-        let tf = TextField()
+    lazy var dateOfBirth: KBTextField = {
+        let tf = KBTextField()
         tf.placeholder = "Enter your date of birth"
         tf.error = "Date of birth must be mm/dd/yyyy"
         tf.delegate = self
@@ -150,8 +150,8 @@ class SignUpViewController: UIViewController {
         return tf
     }()
     
-    private lazy var send: LoadingButton = {
-        let btn = LoadingButton()
+    private lazy var send: KBLoadingButton = {
+        let btn = KBLoadingButton()
         btn.title = "Enter"
         btn.titleColor = .white
         btn.backgroundColor = UIColor(named: "backgroundFeedPriceLb")
@@ -303,7 +303,7 @@ extension SignUpViewController: TextFieldDelegate {
         }
         
         let nextTag = textField.tag + 1
-        let component = formContainer.findViewByTag(tag: nextTag) as? TextField
+        let component = formContainer.findViewByTag(tag: nextTag) as? KBTextField
         if component != nil {
             component?.gainFocus()
         } else {

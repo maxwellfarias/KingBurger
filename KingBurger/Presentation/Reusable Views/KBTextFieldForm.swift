@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class TextFieldForm: UITextField {
+class KBTextFieldForm: UITextField {
     
     unowned var scrollView: UIScrollView
     

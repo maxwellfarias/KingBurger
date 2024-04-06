@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class LoadingButton: UIView {
+class KBLoadingButton: UIView {
     
     lazy var button: UIButton = {
         let btn = UIButton()
@@ -83,7 +83,7 @@ class LoadingButton: UIView {
 }
 
 
-extension LoadingButton: ViewCodeProtocol {
+extension KBLoadingButton: ViewCodeProtocol {
     func buildViewHierarchy() {
         addSubview(button)
         addSubview(progress)

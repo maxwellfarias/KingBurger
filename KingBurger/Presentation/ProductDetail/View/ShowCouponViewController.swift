@@ -17,8 +17,8 @@ class ShowCouponViewController: UIViewController {
         return v
     }()
     
-    let couponView: CouponView = {
-        let v = CouponView()
+    let couponView: KBCouponView = {
+        let v = KBCouponView()
         v.translatesAutoresizingMaskIntoConstraints = false
         return v
     }()

@@ -10,7 +10,7 @@ import UIKit
 import SDWebImage
 
 
-class CouponView: UIView {
+class KBCouponView: UIView {
     
     //    MARK: Views
     private let couponContainer: UIView = {
@@ -212,7 +212,7 @@ class CouponView: UIView {
     
 }
 
-extension CouponView: ViewCodeProtocol {
+extension KBCouponView: ViewCodeProtocol {
     func buildViewHierarchy() {
         self.addSubview(couponContainer)
         couponContainer.addSubview(couponRightImg)

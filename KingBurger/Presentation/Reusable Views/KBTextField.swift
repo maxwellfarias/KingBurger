@@ -12,7 +12,7 @@ protocol TextFieldDelegate: UITextFieldDelegate {
     func textFieldDidChanged(isValid: Bool, bitmask: Int, text: String)
 }
 
-class TextField: UIView {
+class KBTextField: UIView {
     
     private lazy var tf: UITextField = {
         let tf = UITextField()
@@ -134,7 +134,7 @@ class TextField: UIView {
     }
 }
 
-extension TextField: ViewCodeProtocol {
+extension KBTextField: ViewCodeProtocol {
     func buildViewHierarchy() {
         addSubview(tf)
         addSubview(errorLabel)

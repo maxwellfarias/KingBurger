@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		150EA9F82A958EE600A94B61 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150EA9F72A958EE600A94B61 /* TextField.swift */; };
+		150EA9F82A958EE600A94B61 /* KBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150EA9F72A958EE600A94B61 /* KBTextField.swift */; };
 		15184D822A83D74B004A7335 /* SafeAreaExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15184D812A83D74B004A7335 /* SafeAreaExtension.swift */; };
 		15184D842A83DBA3004A7335 /* SignUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15184D832A83DBA3004A7335 /* SignUpState.swift */; };
 		151986B02A8E39B0006D0519 /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151986AF2A8E39B0006D0519 /* PaddingTextField.swift */; };
-		151986B22A8E3B88006D0519 /* TextFieldForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151986B12A8E3B88006D0519 /* TextFieldForm.swift */; };
+		151986B22A8E3B88006D0519 /* KBTextFieldForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151986B12A8E3B88006D0519 /* KBTextFieldForm.swift */; };
 		151D56FA2A97CD4E00870192 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151D56F92A97CD4E00870192 /* Strings.swift */; };
-		152856492AB880610023E8B4 /* CouponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152856482AB880610023E8B4 /* CouponView.swift */; };
+		152856492AB880610023E8B4 /* KBCouponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152856482AB880610023E8B4 /* KBCouponView.swift */; };
 		152F7AF52AAF670100E42030 /* CouponCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152F7AF42AAF670100E42030 /* CouponCoordinator.swift */; };
 		1533F0852A9CBA7C007F79D4 /* Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533F0842A9CBA7C007F79D4 /* Mask.swift */; };
-		153F4B372AC43FD500E8B8CC /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F4B362AC43FD500E8B8CC /* Checkbox.swift */; };
+		153F4B372AC43FD500E8B8CC /* KBCheckbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F4B362AC43FD500E8B8CC /* KBCheckbox.swift */; };
 		153F6BD12AA9E161001D037F /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F6BD02AA9E161001D037F /* ProfileCoordinator.swift */; };
 		153F6BD42AA9E1F9001D037F /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F6BD32AA9E1F9001D037F /* ProfileInteractor.swift */; };
 		153F6BD62AA9E24A001D037F /* ProfileRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153F6BD52AA9E24A001D037F /* ProfileRemoteDataSource.swift */; };
@@ -51,7 +51,6 @@
 		159942FF2AA2D01300C94F53 /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159942FE2AA2D01300C94F53 /* SignInRequest.swift */; };
 		159943022AA2D90E00C94F53 /* SignInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159943012AA2D90E00C94F53 /* SignInResponse.swift */; };
 		159943052AA2DD9200C94F53 /* ResponseUnauthorized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159943042AA2DD9200C94F53 /* ResponseUnauthorized.swift */; };
-		159EFDB12ABAE6450065EEBB /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159EFDB02ABAE6450065EEBB /* TestViewController.swift */; };
 		159FDDDC2AC18DAA007A0AC6 /* UILabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159FDDDB2AC18DAA007A0AC6 /* UILabels.swift */; };
 		15A7DBF22AA7415A00EAB899 /* SplashRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A7DBF12AA7415A00EAB899 /* SplashRequest.swift */; };
 		15A7DBF42AA741EE00EAB899 /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A7DBF32AA741EE00EAB899 /* SplashInteractor.swift */; };
@@ -92,23 +91,23 @@
 		15D2123C2AA8B68B0069B4EE /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D2123B2AA8B68B0069B4EE /* Double.swift */; };
 		15D2123E2AA8EB3E0069B4EE /* CouponResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D2123D2AA8EB3E0069B4EE /* CouponResponse.swift */; };
 		15E0DD062AB5E3670010856F /* ShowCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E0DD052AB5E3670010856F /* ShowCouponViewController.swift */; };
-		15F833DB2A8DA9B800C4BD9C /* LoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F833DA2A8DA9B800C4BD9C /* LoadingButton.swift */; };
-		15FFCA142ABC26F000CC57FC /* TestCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FFCA132ABC26F000CC57FC /* TestCoordinator.swift */; };
+		15F833DB2A8DA9B800C4BD9C /* KBLoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F833DA2A8DA9B800C4BD9C /* KBLoadingButton.swift */; };
 		C4AEA9442BBE333A00F46244 /* ColorPalette.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AEA9432BBE333A00F46244 /* ColorPalette.xcassets */; };
 		C4F21BED2B6E226400EA0D14 /* KingBurgerColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F21BEC2B6E226400EA0D14 /* KingBurgerColor.swift */; };
+		C4FFEAE72BC16EA90037BCC2 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FFEAE62BC16EA90037BCC2 /* APIKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		150EA9F72A958EE600A94B61 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		150EA9F72A958EE600A94B61 /* KBTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBTextField.swift; sourceTree = "<group>"; };
 		15184D812A83D74B004A7335 /* SafeAreaExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaExtension.swift; sourceTree = "<group>"; };
 		15184D832A83DBA3004A7335 /* SignUpState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpState.swift; sourceTree = "<group>"; };
 		151986AF2A8E39B0006D0519 /* PaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
-		151986B12A8E3B88006D0519 /* TextFieldForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldForm.swift; sourceTree = "<group>"; };
+		151986B12A8E3B88006D0519 /* KBTextFieldForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBTextFieldForm.swift; sourceTree = "<group>"; };
 		151D56F92A97CD4E00870192 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		152856482AB880610023E8B4 /* CouponView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponView.swift; sourceTree = "<group>"; };
+		152856482AB880610023E8B4 /* KBCouponView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBCouponView.swift; sourceTree = "<group>"; };
 		152F7AF42AAF670100E42030 /* CouponCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponCoordinator.swift; sourceTree = "<group>"; };
 		1533F0842A9CBA7C007F79D4 /* Mask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mask.swift; sourceTree = "<group>"; };
-		153F4B362AC43FD500E8B8CC /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		153F4B362AC43FD500E8B8CC /* KBCheckbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBCheckbox.swift; sourceTree = "<group>"; };
 		153F6BD02AA9E161001D037F /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		153F6BD32AA9E1F9001D037F /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
 		153F6BD52AA9E24A001D037F /* ProfileRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRemoteDataSource.swift; sourceTree = "<group>"; };
@@ -143,7 +142,6 @@
 		159942FE2AA2D01300C94F53 /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
 		159943012AA2D90E00C94F53 /* SignInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInResponse.swift; sourceTree = "<group>"; };
 		159943042AA2DD9200C94F53 /* ResponseUnauthorized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseUnauthorized.swift; sourceTree = "<group>"; };
-		159EFDB02ABAE6450065EEBB /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		159FDDDB2AC18DAA007A0AC6 /* UILabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabels.swift; sourceTree = "<group>"; };
 		15A7DBF12AA7415A00EAB899 /* SplashRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRequest.swift; sourceTree = "<group>"; };
 		15A7DBF32AA741EE00EAB899 /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
@@ -185,10 +183,10 @@
 		15D2123B2AA8B68B0069B4EE /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		15D2123D2AA8EB3E0069B4EE /* CouponResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponResponse.swift; sourceTree = "<group>"; };
 		15E0DD052AB5E3670010856F /* ShowCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCouponViewController.swift; sourceTree = "<group>"; };
-		15F833DA2A8DA9B800C4BD9C /* LoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingButton.swift; sourceTree = "<group>"; };
-		15FFCA132ABC26F000CC57FC /* TestCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoordinator.swift; sourceTree = "<group>"; };
+		15F833DA2A8DA9B800C4BD9C /* KBLoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBLoadingButton.swift; sourceTree = "<group>"; };
 		C4AEA9432BBE333A00F46244 /* ColorPalette.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorPalette.xcassets; sourceTree = "<group>"; };
 		C4F21BEC2B6E226400EA0D14 /* KingBurgerColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingBurgerColor.swift; sourceTree = "<group>"; };
+		C4FFEAE62BC16EA90037BCC2 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,16 +303,6 @@
 			children = (
 				159942FE2AA2D01300C94F53 /* SignInRequest.swift */,
 				159943012AA2D90E00C94F53 /* SignInResponse.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		159943032AA2DD8500C94F53 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				159943042AA2DD9200C94F53 /* ResponseUnauthorized.swift */,
-				1582C67C2AA5C82C00EE257F /* LocalDataSource.swift */,
-				1582C67E2AA5C85500EE257F /* UserAuth.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -440,14 +428,14 @@
 		15C9C50A2A83109A0063B7E3 /* KingBurger */ = {
 			isa = PBXGroup;
 			children = (
-				15C9C50D2A83109A0063B7E3 /* SceneDelegate.swift */,
-				15C9C50B2A83109A0063B7E3 /* AppDelegate.swift */,
-				C4AEA9482BBE46AA00F46244 /* Presentation */,
-				C4F21BE72B6E21BE00EA0D14 /* Core */,
-				15FFCA152ABC282300CC57FC /* Test */,
-				15C9C5302A8335320063B7E3 /* Comom */,
-				C4AEA9402BBE328300F46244 /* Assets */,
 				15C9C5192A83109E0063B7E3 /* Info.plist */,
+				C4FFEAE42BC16A580037BCC2 /* App */,
+				C4AEA9402BBE328300F46244 /* Assets */,
+				C4F21BE72B6E21BE00EA0D14 /* Core */,
+				C4FFEADF2BC169E20037BCC2 /* Data */,
+				C4FFEADC2BC169BB0037BCC2 /* Domain */,
+				C4FFEAE12BC16A0D0037BCC2 /* Extensions & Helpers */,
+				C4AEA9482BBE46AA00F46244 /* Presentation */,
 			);
 			path = KingBurger;
 			sourceTree = "<group>";
@@ -500,23 +488,6 @@
 				15C9C52D2A8332320063B7E3 /* SignUpViewController.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		15C9C5302A8335320063B7E3 /* Comom */ = {
-			isa = PBXGroup;
-			children = (
-				159943032AA2DD8500C94F53 /* Model */,
-				15F833D92A8DA99E00C4BD9C /* View */,
-				15C9C5292A8318610063B7E3 /* ViewCodeProtocol.swift */,
-				151D56F92A97CD4E00870192 /* Strings.swift */,
-				1533F0842A9CBA7C007F79D4 /* Mask.swift */,
-				1541987C2A9E2E5600A21BB9 /* WebServiceAPI.swift */,
-				15D2123B2AA8B68B0069B4EE /* Double.swift */,
-				15434EAC2AAEF92800E21D98 /* KeyboardHandle.swift */,
-				15434EB02AAF2B8800E21D98 /* Date.swift */,
-				159FDDDB2AC18DAA007A0AC6 /* UILabels.swift */,
-			);
-			path = Comom;
 			sourceTree = "<group>";
 		};
 		15C9C5332A83359C0063B7E3 /* ViewModel */ = {
@@ -586,31 +557,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		15F833D92A8DA99E00C4BD9C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				15184D812A83D74B004A7335 /* SafeAreaExtension.swift */,
-				15F833DA2A8DA9B800C4BD9C /* LoadingButton.swift */,
-				151986AF2A8E39B0006D0519 /* PaddingTextField.swift */,
-				151986B12A8E3B88006D0519 /* TextFieldForm.swift */,
-				150EA9F72A958EE600A94B61 /* TextField.swift */,
-				15434EAA2AAEF8E100E21D98 /* ViewControllers.swift */,
-				15434EAE2AAF136100E21D98 /* Views.swift */,
-				152856482AB880610023E8B4 /* CouponView.swift */,
-				153F4B362AC43FD500E8B8CC /* Checkbox.swift */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		15FFCA152ABC282300CC57FC /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				15FFCA132ABC26F000CC57FC /* TestCoordinator.swift */,
-				159EFDB02ABAE6450065EEBB /* TestViewController.swift */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
 		C4AEA9402BBE328300F46244 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -640,6 +586,7 @@
 		C4AEA9482BBE46AA00F46244 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				C4FFEAE52BC16BEB0037BCC2 /* Reusable Views */,
 				15D212282AA871030069B4EE /* ProductDetail */,
 				15A7DBF02AA73ECB00EAB899 /* Splash */,
 				15BFDBEE2A9398FF0083EEEB /* Coupon */,
@@ -667,6 +614,7 @@
 			isa = PBXGroup;
 			children = (
 				C4F21BEC2B6E226400EA0D14 /* KingBurgerColor.swift */,
+				C4FFEAE62BC16EA90037BCC2 /* APIKey.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -690,6 +638,103 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		C4FFEADC2BC169BB0037BCC2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C4FFEADE2BC169D50037BCC2 /* Use Case */,
+				C4FFEADD2BC169CA0037BCC2 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C4FFEADD2BC169CA0037BCC2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				1582C67E2AA5C85500EE257F /* UserAuth.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C4FFEADE2BC169D50037BCC2 /* Use Case */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Use Case";
+			sourceTree = "<group>";
+		};
+		C4FFEADF2BC169E20037BCC2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C4FFEAE02BC169F20037BCC2 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C4FFEAE02BC169F20037BCC2 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				1541987C2A9E2E5600A21BB9 /* WebServiceAPI.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C4FFEAE12BC16A0D0037BCC2 /* Extensions & Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C4FFEAE32BC16A290037BCC2 /* Extension */,
+				C4FFEAE22BC16A210037BCC2 /* Helper */,
+			);
+			path = "Extensions & Helpers";
+			sourceTree = "<group>";
+		};
+		C4FFEAE22BC16A210037BCC2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				15434EAC2AAEF92800E21D98 /* KeyboardHandle.swift */,
+				15C9C5292A8318610063B7E3 /* ViewCodeProtocol.swift */,
+				1533F0842A9CBA7C007F79D4 /* Mask.swift */,
+				1582C67C2AA5C82C00EE257F /* LocalDataSource.swift */,
+				159943042AA2DD9200C94F53 /* ResponseUnauthorized.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C4FFEAE32BC16A290037BCC2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				15434EAA2AAEF8E100E21D98 /* ViewControllers.swift */,
+				15184D812A83D74B004A7335 /* SafeAreaExtension.swift */,
+				15434EAE2AAF136100E21D98 /* Views.swift */,
+				159FDDDB2AC18DAA007A0AC6 /* UILabels.swift */,
+				15434EB02AAF2B8800E21D98 /* Date.swift */,
+				151D56F92A97CD4E00870192 /* Strings.swift */,
+				151986AF2A8E39B0006D0519 /* PaddingTextField.swift */,
+				15D2123B2AA8B68B0069B4EE /* Double.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C4FFEAE42BC16A580037BCC2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				15C9C50D2A83109A0063B7E3 /* SceneDelegate.swift */,
+				15C9C50B2A83109A0063B7E3 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C4FFEAE52BC16BEB0037BCC2 /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				15F833DA2A8DA9B800C4BD9C /* KBLoadingButton.swift */,
+				153F4B362AC43FD500E8B8CC /* KBCheckbox.swift */,
+				150EA9F72A958EE600A94B61 /* KBTextField.swift */,
+				152856482AB880610023E8B4 /* KBCouponView.swift */,
+				151986B12A8E3B88006D0519 /* KBTextFieldForm.swift */,
+			);
+			path = "Reusable Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -773,7 +818,6 @@
 				15A7DC192AA8044A00EAB899 /* HighlightResponse.swift in Sources */,
 				153F6BDE2AA9F66A001D037F /* UserResponse.swift in Sources */,
 				151986B02A8E39B0006D0519 /* PaddingTextField.swift in Sources */,
-				15FFCA142ABC26F000CC57FC /* TestCoordinator.swift in Sources */,
 				1581E7302AB0916700432C03 /* CouponViewModel.swift in Sources */,
 				15D212352AA8A51D0069B4EE /* ProductDetailInteractor.swift in Sources */,
 				1581E72D2AB06A0000432C03 /* CouponCell.swift in Sources */,
@@ -792,6 +836,7 @@
 				15184D822A83D74B004A7335 /* SafeAreaExtension.swift in Sources */,
 				158DBE792A8588DF00C8FF2B /* HomeViewController.swift in Sources */,
 				15C9C5202A8312860063B7E3 /* SignInCoordinator.swift in Sources */,
+				C4FFEAE72BC16EA90037BCC2 /* APIKey.swift in Sources */,
 				1582C67B2AA5B82E00EE257F /* SignInRemoteDataSource.swift in Sources */,
 				15BFDBFD2A9425F00083EEEB /* HighlightView.swift in Sources */,
 				15A7DC0E2AA7EC7F00EAB899 /* FeedResponse.swift in Sources */,
@@ -800,8 +845,8 @@
 				159942FF2AA2D01300C94F53 /* SignInRequest.swift in Sources */,
 				15C9C52A2A8318610063B7E3 /* ViewCodeProtocol.swift in Sources */,
 				159943052AA2DD9200C94F53 /* ResponseUnauthorized.swift in Sources */,
-				15F833DB2A8DA9B800C4BD9C /* LoadingButton.swift in Sources */,
-				153F4B372AC43FD500E8B8CC /* Checkbox.swift in Sources */,
+				15F833DB2A8DA9B800C4BD9C /* KBLoadingButton.swift in Sources */,
+				153F4B372AC43FD500E8B8CC /* KBCheckbox.swift in Sources */,
 				15184D842A83DBA3004A7335 /* SignUpState.swift in Sources */,
 				15CFA0892A9FBA510017238C /* SignUpRequest.swift in Sources */,
 				15A7DC0C2AA7EC5600EAB899 /* FeedState.swift in Sources */,
@@ -827,7 +872,7 @@
 				158DBE772A8588D200C8FF2B /* HomeViewModel.swift in Sources */,
 				15C9C52C2A8328AB0063B7E3 /* SignInState.swift in Sources */,
 				15D212372AA8A58E0069B4EE /* ProductDetailRemoteDataSource.swift in Sources */,
-				150EA9F82A958EE600A94B61 /* TextField.swift in Sources */,
+				150EA9F82A958EE600A94B61 /* KBTextField.swift in Sources */,
 				15BFDBF12A93991E0083EEEB /* CouponViewController.swift in Sources */,
 				153F6BD92AA9E2EC001D037F /* ProfileViewModel.swift in Sources */,
 				1582C6792AA5B80B00EE257F /* SignInInteractor.swift in Sources */,
@@ -836,12 +881,12 @@
 				159942FD2AA2CFE500C94F53 /* SignInResponseError.swift in Sources */,
 				15D2123E2AA8EB3E0069B4EE /* CouponResponse.swift in Sources */,
 				15C9C52E2A8332320063B7E3 /* SignUpViewController.swift in Sources */,
-				152856492AB880610023E8B4 /* CouponView.swift in Sources */,
+				152856492AB880610023E8B4 /* KBCouponView.swift in Sources */,
 				15434EAB2AAEF8E100E21D98 /* ViewControllers.swift in Sources */,
 				1581E7372AB092EA00432C03 /* CouponRemoteDataSource.swift in Sources */,
 				159942F72AA2BC4F00C94F53 /* ResponseError.swift in Sources */,
 				15A7DC102AA7EC9700EAB899 /* FeedRequest.swift in Sources */,
-				151986B22A8E3B88006D0519 /* TextFieldForm.swift in Sources */,
+				151986B22A8E3B88006D0519 /* KBTextFieldForm.swift in Sources */,
 				15C9C50E2A83109A0063B7E3 /* SceneDelegate.swift in Sources */,
 				15434EAD2AAEF92800E21D98 /* KeyboardHandle.swift in Sources */,
 				C4F21BED2B6E226400EA0D14 /* KingBurgerColor.swift in Sources */,
@@ -850,7 +895,6 @@
 				15D2122C2AA8713D0069B4EE /* ProductDetailCoordinator.swift in Sources */,
 				159FDDDC2AC18DAA007A0AC6 /* UILabels.swift in Sources */,
 				15C9C5222A83136B0063B7E3 /* SignInViewModel.swift in Sources */,
-				159EFDB12ABAE6450065EEBB /* TestViewController.swift in Sources */,
 				15D2123C2AA8B68B0069B4EE /* Double.swift in Sources */,
 				152F7AF52AAF670100E42030 /* CouponCoordinator.swift in Sources */,
 				15BFDBF72A93A7F20083EEEB /* FeedTableViewCell.swift in Sources */,

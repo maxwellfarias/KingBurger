@@ -11,7 +11,7 @@ import Foundation
 
 class WebServiceAPI {
     
-    static let apiKey = ""
+    static let apiKey = APIKey.key
     static let baseURL = "https://hades.tiagoaguiar.co/kingburguer"
     
     static let shared = WebServiceAPI()
