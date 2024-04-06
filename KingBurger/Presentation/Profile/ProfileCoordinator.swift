@@ -7,14 +7,18 @@
 
 import UIKit
 
-class ProfileCoordinator {
+protocol ProfileCoordinatorFlow {
+    func start()
+}
+
+class ProfileCoordinator: ProfileCoordinatorFlow {
     
     private let navigationController: UINavigationController
+    private let parentCoordinator: HomeCoordinatorFlow
     
-    var parentCoordinator: HomeCoordinator?
-    
-    init(_ navigationController: UINavigationController) {
+    init(_ navigationController: UINavigationController, _ parentCoordinator: HomeCoordinatorFlow) {
         self.navigationController = navigationController
+        self.parentCoordinator = parentCoordinator
     }
     
     func start() {
@@ -24,14 +28,7 @@ class ProfileCoordinator {
         
         let profileVC = ProfileViewController()
         profileVC.viewModel = viewModel
-        
-        
-//        TIRAR DAQUI  O CODUGO E COLOCAR NO VIEWCONTROLLER
-        
-        navigationController.tabBarItem.image = UIImage(systemName: "person.circle")
-        navigationController.tabBarItem.title = "Profile"
-        
+    
         navigationController.pushViewController(profileVC, animated: true)
     }
-    
 }

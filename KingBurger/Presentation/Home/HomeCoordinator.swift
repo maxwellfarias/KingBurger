@@ -7,7 +7,12 @@
 
 import UIKit
 
-class HomeCoordinator {
+protocol HomeCoordinatorFlow {
+    func start()
+    func goToLogin()
+}
+
+class HomeCoordinator: HomeCoordinatorFlow {
     
     private let window: UIWindow?
     
@@ -23,20 +28,16 @@ class HomeCoordinator {
     func start() {
         let homeVC = HomeViewController()
         
-        let feedCoordinator = FeedCoordinator(navFeedVC)
-        feedCoordinator.parentCoordinator = self
+        let feedCoordinator: FeedCoordinatorFlow = FeedCoordinator(navFeedVC, self)
         feedCoordinator.start()
         
-        let profileCoodinator = ProfileCoordinator(navProfileVC)
-        profileCoodinator.parentCoordinator = self
+        let profileCoodinator = ProfileCoordinator(navProfileVC, self)
         profileCoodinator.start()
         
-        let couponCoodinator = CouponCoordinator(navCouponVC)
-        couponCoodinator.parentCoordinator = self
+        let couponCoodinator = CouponCoordinator(navCouponVC, self)
         couponCoodinator.start()
         
         homeVC.setViewControllers([navFeedVC, navProfileVC, navCouponVC], animated: true)
-        
         window?.rootViewController = homeVC
     }
     
@@ -44,6 +45,5 @@ class HomeCoordinator {
         signInCoordinator = SignInCoordinator(window: window)
         signInCoordinator?.start()
     }
-    
 }
 

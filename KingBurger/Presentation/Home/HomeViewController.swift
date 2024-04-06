@@ -13,13 +13,6 @@ class HomeViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        
-
         tabBar.tintColor = .systemOrange
-        
-
-//        couponVC.tabBarItem.image = UIImage(systemName: "arrow.down.to.line")
-//        profileVC.tabBarItem.image = UIImage(systemName: "person.circle")
-
     }
 }

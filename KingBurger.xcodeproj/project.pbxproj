@@ -277,19 +277,18 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		159943002AA2D8FC00C94F53 /* Model */ = {
+		159943002AA2D8FC00C94F53 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
 				159942FE2AA2D01300C94F53 /* SignInRequest.swift */,
 				159943012AA2D90E00C94F53 /* SignInResponse.swift */,
 			);
-			path = Model;
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 		15A7DBF02AA73ECB00EAB899 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				15A7DBF12AA7415A00EAB899 /* SplashRequest.swift */,
 				15A7DBF32AA741EE00EAB899 /* SplashInteractor.swift */,
 				15A7DBF52AA7427100EAB899 /* SplashRemoteDataSource.swift */,
 			);
@@ -413,8 +412,8 @@
 				C4FFEADF2BC169E20037BCC2 /* Data */,
 				C4FFEADC2BC169BB0037BCC2 /* Domain */,
 				C4FFEAE12BC16A0D0037BCC2 /* Extensions & Helpers */,
-				15C9C5192A83109E0063B7E3 /* Info.plist */,
 				C4AEA9482BBE46AA00F46244 /* Presentation */,
+				15C9C5192A83109E0063B7E3 /* Info.plist */,
 			);
 			path = KingBurger;
 			sourceTree = "<group>";
@@ -424,7 +423,6 @@
 			children = (
 				15C9C51F2A8312860063B7E3 /* SignInCoordinator.swift */,
 				1582C6772AA5B7CB00EE257F /* Interactor */,
-				159943002AA2D8FC00C94F53 /* Model */,
 				15C9C5282A8318300063B7E3 /* ViewModel */,
 				15C9C5272A8318270063B7E3 /* View */,
 			);
@@ -435,7 +433,6 @@
 			isa = PBXGroup;
 			children = (
 				155ED6532AA36C83000F6C7C /* Interactor */,
-				15CFA0872A9FBA3B0017238C /* Model */,
 				15C9C5332A83359C0063B7E3 /* ViewModel */,
 				15C9C52F2A8333470063B7E3 /* View */,
 				15C9C5232A8313B90063B7E3 /* SignUpCoordinator.swift */,
@@ -476,17 +473,6 @@
 				15184D832A83DBA3004A7335 /* SignUpState.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		15CFA0872A9FBA3B0017238C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				15CFA0882A9FBA510017238C /* SignUpRequest.swift */,
-				159942F62AA2BC4F00C94F53 /* ResponseError.swift */,
-				159942F82AA2BC6B00C94F53 /* SignUpResponseUnauthorized.swift */,
-				159942FA2AA2C03400C94F53 /* SignUpResponse.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		15D212282AA871030069B4EE /* ProductDetail */ = {
@@ -632,6 +618,9 @@
 		C4FFEADD2BC169CA0037BCC2 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				159943002AA2D8FC00C94F53 /* SignIn */,
+				C4FFEAF02BC179DA0037BCC2 /* SignUp */,
+				15A7DBF12AA7415A00EAB899 /* SplashRequest.swift */,
 				1582C67E2AA5C85500EE257F /* UserAuth.swift */,
 			);
 			path = Entities;
@@ -724,6 +713,17 @@
 				C4FFEAEA2BC1769D0037BCC2 /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		C4FFEAF02BC179DA0037BCC2 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				15CFA0882A9FBA510017238C /* SignUpRequest.swift */,
+				159942F62AA2BC4F00C94F53 /* ResponseError.swift */,
+				159942F82AA2BC6B00C94F53 /* SignUpResponseUnauthorized.swift */,
+				159942FA2AA2C03400C94F53 /* SignUpResponse.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

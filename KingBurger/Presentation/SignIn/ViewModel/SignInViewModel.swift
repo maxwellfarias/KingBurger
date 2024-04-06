@@ -13,16 +13,17 @@ protocol SignInViewModelDelegate: AnyObject {
 }
 
 class SignInViewModel {
-    weak var delegate: SignInViewModelDelegate?
-    var coordinate: SignInCoordinator?
+    
+    var delegate: SignInViewModelDelegate?
+    private var coordinate: SignInCoordinatorFlow
+    private var interactor: SignInInteractor
     var username = ""
     var password = ""
     
-    private let interactor: SignInInteractor
-    init (interactor: SignInInteractor){
+    init(coordinate:  SignInCoordinatorFlow, interactor: SignInInteractor) {
+        self.coordinate = coordinate
         self.interactor = interactor
     }
-    
     
     var state: SignInState = .none {
         didSet {
@@ -47,11 +48,11 @@ class SignInViewModel {
     }
     
     func goToSignUp(){
-        coordinate?.signUp()
+        coordinate.signUp()
     }
     
     func goToHome() {
-        coordinate?.home()
+        coordinate.home()
     }
     
     

@@ -7,14 +7,20 @@
 
 import UIKit
 
-class FeedCoordinator {
+protocol FeedCoordinatorFlow {
+    func start()
+    func goToProductDetail(productId: Int)
+    func goToLogin()
+}
+
+class FeedCoordinator: FeedCoordinatorFlow {
     
     private let navigationController: UINavigationController
+    private let parentCoordinator: HomeCoordinatorFlow
     
-    var parentCoordinator: HomeCoordinator?
-    
-    init(_ navigationController: UINavigationController) {
+    init(_ navigationController: UINavigationController, _ parentCoordinator: HomeCoordinatorFlow) {
         self.navigationController = navigationController
+        self.parentCoordinator = parentCoordinator
     }
     
     func start() {
@@ -36,7 +42,7 @@ class FeedCoordinator {
     }
     
     func goToLogin () {
-        parentCoordinator?.goToLogin()
+        parentCoordinator.goToLogin()
     }
     
 }

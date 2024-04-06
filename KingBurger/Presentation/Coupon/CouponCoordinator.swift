@@ -7,19 +7,22 @@
 
 import UIKit
 
-class CouponCoordinator {
+protocol CouponCoordinatorFlow {
+    func start()
+}
+
+class CouponCoordinator: CouponCoordinatorFlow {
     
     private let navigationController: UINavigationController
+    var parentCoordinator: HomeCoordinatorFlow
     
-    var parentCoordinator: HomeCoordinator?
-    
-    init(_ navigationController: UINavigationController) {
+    init(_ navigationController: UINavigationController, _ parentCoordinator: HomeCoordinatorFlow) {
         self.navigationController = navigationController
+        self.parentCoordinator = parentCoordinator
     }
     
     func start() {
                 let interactor = CouponInteractor()
-        
                 let viewModel = CouponViewModel(interactor: interactor)
                 viewModel.coordinator = self
         

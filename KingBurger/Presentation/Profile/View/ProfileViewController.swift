@@ -8,6 +8,16 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        self.tabBarItem.image = UIImage(systemName: "person.circle")
+        self.tabBarItem.title = "Profile"
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     let progress: UIActivityIndicatorView = {
         let v = UIActivityIndicatorView()
@@ -199,17 +209,17 @@ extension ProfileViewController: ViewCodeProtocol {
             progress.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             progress.topAnchor.constraint(equalTo: view.topAnchor),
             progress.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-
+            
             coverImg.topAnchor.constraint(equalTo: view.topAnchor),
             coverImg.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             coverImg.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             coverImg.heightAnchor.constraint(equalToConstant: 300),
-      
+            
             profileImg.centerYAnchor.constraint(equalTo: coverImg.centerYAnchor),
             profileImg.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
             profileImg.heightAnchor.constraint(equalToConstant: 100),
             profileImg.widthAnchor.constraint(equalToConstant: 100),
-      
+            
             mainContainer.topAnchor.constraint(equalTo: coverImg.bottomAnchor, constant: -80),
             mainContainer.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             mainContainer.trailingAnchor.constraint(equalTo: view.trailingAnchor),
@@ -219,31 +229,31 @@ extension ProfileViewController: ViewCodeProtocol {
             mainContainerBackground.leadingAnchor.constraint(equalTo: mainContainer.leadingAnchor, constant: 10),
             mainContainerBackground.trailingAnchor.constraint(equalTo: mainContainer.trailingAnchor, constant: -10),
             mainContainerBackground.heightAnchor.constraint(equalToConstant: 200),
-
+            
             nameLb.topAnchor.constraint(equalTo: profileImg.topAnchor, constant: 30),
             nameLb.leadingAnchor.constraint(equalTo: profileImg.trailingAnchor, constant: 20),
-
+            
             idIcon.topAnchor.constraint(equalTo: nameLb.bottomAnchor, constant: 10),
             idIcon.leadingAnchor.constraint(equalTo: nameLb.leadingAnchor),
-
+            
             idLb.centerYAnchor.constraint(equalTo: idIcon.centerYAnchor),
             idLb.leadingAnchor.constraint(equalTo: idIcon.trailingAnchor, constant: 10),
-
+            
             emailIcon.topAnchor.constraint(equalTo: mainContainerBackground.topAnchor, constant: 15),
             emailIcon.leadingAnchor.constraint(equalTo: mainContainerBackground.leadingAnchor, constant: 15),
-      
+            
             emailLb.centerYAnchor.constraint(equalTo: emailIcon.centerYAnchor),
             emailLb.leadingAnchor.constraint(equalTo: emailIcon.trailingAnchor, constant: 20),
-
+            
             documentIcon.topAnchor.constraint(equalTo: emailIcon.bottomAnchor, constant: 20),
             documentIcon.leadingAnchor.constraint(equalTo: emailIcon.leadingAnchor),
-
+            
             documentLb.centerYAnchor.constraint(equalTo: documentIcon.centerYAnchor),
             documentLb.leadingAnchor.constraint(equalTo: documentIcon.trailingAnchor, constant: 20),
-   
+            
             dateOfBirthIcon.topAnchor.constraint(equalTo: documentIcon.bottomAnchor, constant: 20),
             dateOfBirthIcon.leadingAnchor.constraint(equalTo: documentIcon.leadingAnchor),
-    
+            
             dateOfBirthLb.centerYAnchor.constraint(equalTo: dateOfBirthIcon.centerYAnchor),
             dateOfBirthLb.leadingAnchor.constraint(equalTo: documentLb.leadingAnchor)
         ])

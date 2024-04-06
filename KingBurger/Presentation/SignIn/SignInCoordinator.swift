@@ -8,8 +8,13 @@
 import Foundation
 import UIKit
 
+protocol SignInCoordinatorFlow {
+    func signUp()
+    func home()
+    func start()
+}
 
-class SignInCoordinator {
+class SignInCoordinator: SignInCoordinatorFlow {
     private let window: UIWindow?
     private let navigationController: UINavigationController
     
@@ -18,20 +23,19 @@ class SignInCoordinator {
         navigationController = UINavigationController()
     }
     
-    func start () {
+    func start() {
+        let interactor = SignInInteractor()
+        let viewModel = SignInViewModel(coordinate: self, interactor: interactor)
+        let signInVC = SignInViewController(viewModel)
+        
+
+
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
-        let interactor = SignInInteractor()
-        let signInVC = SignInViewController()
-        let viewModel = SignInViewModel(interactor: interactor)
-        viewModel.coordinate = self
-        signInVC.viewModel = viewModel
-        
-        
         navigationController.pushViewController(signInVC, animated: true)
     }
     
-    func signUp () {
+    func signUp() {
         let signUpCoordinator = SignUpCoordinator (navigationController: navigationController)
         signUpCoordinator.parentCoodinator = self
         signUpCoordinator.start()

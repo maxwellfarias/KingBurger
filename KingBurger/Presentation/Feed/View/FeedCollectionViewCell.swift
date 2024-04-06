@@ -141,6 +141,6 @@ extension FeedCollectionViewCell: ViewCodeProtocol {
             priceLabel.centerXAnchor.constraint(equalTo: priceView.centerXAnchor),
             priceLabel.centerYAnchor.constraint(equalTo: priceView.centerYAnchor)
         ])
-     
+        
     }
 }

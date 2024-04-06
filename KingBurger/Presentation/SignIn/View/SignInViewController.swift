@@ -14,6 +14,17 @@ enum SignInForm: Int {
 
 class SignInViewController: UIViewController {
     
+    private var viewModel:SignInViewModel
+    
+    init(_ viewModel: SignInViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     private let scroll: UIScrollView = {
         let sv = UIScrollView()
         sv.bounces = true
@@ -187,14 +198,9 @@ class SignInViewController: UIViewController {
     
     var bitmaskResult = 0
     
-    var viewModel: SignInViewModel? {
-        didSet {
-            viewModel?.delegate = self
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.delegate = self
         applyViewCode()
         view.backgroundColor = .systemBackground
         
@@ -215,11 +221,11 @@ class SignInViewController: UIViewController {
     }
     
     @objc func sendDidTap (_ sender: UIButton) {
-        viewModel?.send()
+        viewModel.send()
     }
     
     @objc func registerDidTap (_ sender: UIButton) {
-        viewModel?.goToSignUp()
+        viewModel.goToSignUp()
     }
 }
 
@@ -335,7 +341,7 @@ extension SignInViewController: SignInViewModelDelegate {
             loginBtn.startLoading(true)
         case .goTohome:
             loginBtn.startLoading(false)
-            viewModel?.goToHome()
+            viewModel.goToHome()
             
         case .error(let msg):
             loginBtn.startLoading(false)
@@ -368,10 +374,10 @@ extension SignInViewController: TextFieldDelegate {
         loginBtn.enabledButton(isEnabled: (SignInForm.email.rawValue & self.bitmaskResult != 0) && (SignInForm.password.rawValue & self.bitmaskResult != 0))
         
         if bitmask == SignInForm.email.rawValue {
-            viewModel?.username = text
+            viewModel.username = text
         }
         else if bitmask == SignInForm.password.rawValue {
-            viewModel?.password = text
+            viewModel.password = text
         }
     }
 }
